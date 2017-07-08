@@ -1,0 +1,8 @@
+<Files .htaccess>
+order allow,deny
+</Files>
+
+Options +FollowsSymLinks
+RewriteEngine On
+
+RewriteRule ^(\w+)$ ./load.php?code=$1
